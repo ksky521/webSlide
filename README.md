@@ -9,6 +9,8 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 
 演示页面地址[http://ksky521.github.com/webSlide/](http://ksky521.github.com/webSlide/)，由于页面比较多，所以需要一定的加载时间，国内可以访问SAE上的演示页面：[http://qdemo.sinaapp.com/ppt/udc.htm](http://qdemo.sinaapp.com/ppt/udc.htm)。
 
+演示页面内容为给公司UDC部门同事进行javascript入门培训的内容~
+
 ## 说明
 
 因为是PPT演示文档，所以需要投影仪分辨率，所以演示页面的最佳分辨率为全屏模式下的1024*768，如果在自己电脑上查看，可以通过 ``ctrl + -`` 和 ``ctrl + +`` 缩放到合适的比例查看效果。
@@ -35,3 +37,8 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 操作示例：
 
     $ git clone git://github.com/ksky521/webSlide.git
+	
+## 联系方式
+
+作者博客：[js8.in](http://js8.in)
+作者新浪微博：[@三水清](http://weibo.com/sanshuiqing)
