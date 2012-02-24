@@ -7,7 +7,9 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 
 ## 演示页面
 
-演示页面地址[http://ksky521.github.com/webSlide/](http://ksky521.github.com/webSlide/)，由于页面比较多，所以需要一定的加载时间，国内可以访问SAE上的演示页面：[http://qdemo.sinaapp.com/ppt/udc.htm](http://qdemo.sinaapp.com/ppt/udc.htm)。
+演示页面地址[http://ksky521.github.com/webSlide/](http://ksky521.github.com/webSlide/)，由于页面比较多，所以需要一定的加载时间。
+
+国内可以访问SAE上的演示页面：[http://qdemo.sinaapp.com/ppt/udc.htm](http://qdemo.sinaapp.com/ppt/udc.htm)。
 
 演示页面内容为给公司UDC部门同事进行javascript入门培训的内容~
 
@@ -41,4 +43,5 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 ## 联系方式
 
 作者博客：[js8.in](http://js8.in)
+
 作者新浪微博：[@三水清](http://weibo.com/sanshuiqing)
