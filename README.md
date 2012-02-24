@@ -1,4 +1,4 @@
-# webSlide——PPT演示文档javascript框架
+# webSlide — PPT演示文档javascript框架
 [webSlide](https://github.com/ksky521/webSlide)是用于在线PPT演示文档的javascript框架
 ## 鸣谢
 webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是当演示文档页面和图片比较多之时，经常出现动画效果不流畅。
@@ -11,24 +11,24 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 
 ## 说明
 
-因为是PPT演示文档，所以需要投影仪分辨率，所以演示页面的最佳分辨率为全屏模式下的1024*768，如果在自己电脑上查看，可以通过 ``ctrl + -`` 和 ``ctrl + +'` 缩放到合适的比例查看效果。
+因为是PPT演示文档，所以需要投影仪分辨率，所以演示页面的最佳分辨率为全屏模式下的1024*768，如果在自己电脑上查看，可以通过 ``ctrl + -`` 和 ``ctrl + +`` 缩放到合适的比例查看效果。
 
 建议浏览器chrome 16+，全屏模式（F11），以达到最佳动画效果。在Firefox下会出现拖尾现象，个人认为是Firefox 8下对CSS3动画效果渲染太慢导致，其他浏览器未测试。
 
 ## 快捷键
 
-* 空格/→/↓:下一页
-* ←/↑:上一页
-* P:开画板
-* C:清除画板
+* 空格/→/↓：下一页
+* ←/↑：上一页
+* P：开画板
+* C：清除画板
 
 ## 版本库地址
 
 支持三种访问协议：
 
-* HTTP协议: `https://ksky521@github.com/ksky521/webSlide.git` 。
-* Git协议: `git://github.com/ksky521/webSlide.git` 。
-* SSH协议: `ssh://git@github.com:ksky521/webSlide.git` 。
+* HTTP协议： `https://ksky521@github.com/ksky521/webSlide.git` 。
+* Git协议： `git://github.com/ksky521/webSlide.git` 。
+* SSH协议： `ssh://git@github.com:ksky521/webSlide.git` 。
 
 ## 克隆版本库
 
