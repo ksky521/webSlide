@@ -21,8 +21,8 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 
 ## 快捷键
 
-* 空格/→/↓：下一页
-* ←/↑：上一页
+* 空格/→/↓/Tab/pageDown：下一页
+* ←/↑/pageUp：上一页
 * P：开画板
 * C：清除画板
 
