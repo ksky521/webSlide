@@ -3,7 +3,7 @@
 ## 鸣谢
 webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是当演示文档页面和图片比较多之时，经常出现动画效果不流畅。
 
-写webSlide代码过程中，研究过[impress.js](http://bartaz.github.com/impress.js)和[reveal.js](http://lab.hakim.se/reveal-js/)，向两位的作者表示感谢。
+写webSlide代码过程中，研究过[impress.js](http://bartaz.github.com/impress.js)和[reveal.js](http://lab.hakim.se/reveal-js/)，向两位作者表示感谢。
 
 ## 演示页面
 
