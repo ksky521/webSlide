@@ -10,7 +10,7 @@
 
 <div id="slide" >
 <div class="slides">
-	<section id="cover" class="step">
+	<section id="cover" class="step" >
 		<section class="title">
 			<h1>JS入门及学习指南</h1>
 			<h2><a href="//weibo.com/sanshuiqing" target="_blank">@ 三水清</a></h2>
@@ -352,7 +352,7 @@ len <span class="sy0">=</span> a.<span class="me1">length</span><span class="sy0
 			<li>location：<span style="color:#F60">location.href...<button onclick='alert(location.href);'>Run</button></span></li>
 		</ul>
 		<div data-build>
-		<img src="img/udc0.png" style="position:absolute;left:0;top:340px;width:900px" /></div>
+		<center><img src="src/img/udc0.png" style="position:absolute;left:0;top:340px;width:900px" /></center></div>
 	</section>
 	<section id="step10" class="step slide rebuild">
 		<h1>DOM</h1>
@@ -368,7 +368,7 @@ len <span class="sy0">=</span> a.<span class="me1">length</span><span class="sy0
 &nbsp; &nbsp; &nbsp; &nbsp; <span class="sc2">&lt;<span class="kw2">p</span>&gt;</span>hello world!<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">p</span>&gt;</span><br>
 &nbsp; &nbsp; <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">body</span>&gt;</span><br>
 <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">html</span>&gt;</span></div></td></tr></tbody></table></div>
-		<img src="img/udc2.png" style="position:absolute;right:50px;top:300px;"/>
+		<img src="src/img/udc2.png" style="position:absolute;right:50px;top:300px;"/>
 		</div>
 	</section>
 	
@@ -414,7 +414,13 @@ node.<span class="me1">getElementsByTagName</span><span class="br0">(</span><spa
 &nbsp; &nbsp; &nbsp; &nbsp; <span class="sc2">&lt;<span class="kw2">li</span>&gt;</span>i am 3<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">li</span>&gt;</span><br>
 &nbsp; &nbsp; <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">ul</span>&gt;</span><br>
 <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">div</span>&gt;</span></div></td></tr></tbody></table></div>
+	<br/>
+	<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:700px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br></div></td><td><div class="javascript codecolorer" style="white-space:nowrap"><span class="kw2">var</span> myNode <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">'idName'</span><span class="br0">)</span><span class="sy0">;</span><br>
+myNode.<span class="me1">getAttribute</span><span class="br0">(</span><span class="st0">'node-type'</span><span class="br0">)</span><span class="sy0">;</span></div></td></tr></tbody></table></div>
+	
 	<p><button onclick="alert($demoNode.getAttribute('node-type'))">获取node-type</button></p>
+	<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:700px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br></div></td><td><div class="javascript codecolorer" style="white-space:nowrap"><span class="kw2">var</span> myNode <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">'idName'</span><span class="br0">)</span><span class="sy0">;</span><br>
+myNode.<span class="me1">setAttribute</span><span class="br0">(</span><span class="st0">'node-type'</span><span class="sy0">,</span><span class="st0">'world'</span><span class="br0">)</span><span class="sy0">;</span></div></td></tr></tbody></table></div>
 	<p><button onclick="$demoNode.setAttribute('node-type','world');alert('修改成功')">修改node-type</button></p>
 	</section>
 	
@@ -435,7 +441,7 @@ $span.<span class="me1">appendChild</span><span class="br0">(</span>$text<span c
 node.<span class="me1">appendChild</span><span class="br0">(</span>$span<span class="br0">)</span><span class="sy0">;</span></div></td></tr></tbody></table></div>
 	
 	<p>删除：.removeChild<button onclick="removeNode()">删除节点</button></p>
-	<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:700px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br></div></td><td><div class="javascript codecolorer"><span class="kw2">var</span> node <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">'cNode'</span><span class="br0">)</span><span class="sy0">;</span><span class="co1">//获取p</span><br>
+	<div class="codecolorer-container javascript railscasts" style="overflow:auto;white-space:nowrap;width:780px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br></div></td><td><div class="javascript codecolorer"><span class="kw2">var</span> node <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">(</span><span class="st0">'cNode'</span><span class="br0">)</span><span class="sy0">;</span><span class="co1">//获取p</span><br>
 node <span class="sy0">=</span> node.<span class="me1">getElementsByTagName</span><span class="br0">(</span><span class="st0">'span'</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy0">;</span><span class="co1">//获取span列表，取第一个</span><br>
 node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><span class="br0">(</span>node<span class="br0">)</span><span class="sy0">;</span><span class="co1">//删除</span></div></td></tr></tbody></table></div>
 	
@@ -465,11 +471,11 @@ node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><sp
 &nbsp; &nbsp; <span class="sc2">&lt;<span class="kw2">strong</span>&gt;</span>Hello<span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">strong</span>&gt;</span><br>
 &nbsp; &nbsp; how are you doing?<br>
 <span class="sc2">&lt;<span class="sy0">/</span><span class="kw2">p</span>&gt;</span></div></td></tr></tbody></table></div>
-		<img src="img/udc18.png" alt="" />
+		<center style="margin-top:20px;"><img src="src/img/udc18.png" alt="" /></center>
 	</div>
 	</section>
 	
-	<section id="json" class="step slide">
+	<section id="json" class="step slide rebuild">
 		<h1>JSON</h1>
 		<p>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式</p>
 		<p><a href="http://www.json.org">http://www.json.org</a></p>
@@ -482,7 +488,7 @@ node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><sp
 　<span class="st0">"old"</span><span class="sy0">:</span><span class="nu0">30</span><br>
 <span class="br0">}</span></div></td></tr></tbody></table></div>
 
-<div class="codecolorer-container xml railscasts" style="overflow:auto;white-space:nowrap;width:700px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br></div></td><td><div class="xml codecolorer"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">"1.0"</span> <span class="re0">encoding</span>=<span class="st0">"utf-8"</span><span class="re2">?&gt;</span></span><br>
+<div class="codecolorer-container xml railscasts" style="overflow:auto;white-space:nowrap;width:700px;margin-top:20px"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br></div></td><td><div class="xml codecolorer"><span class="sc3"><span class="re1">&lt;?xml</span> <span class="re0">version</span>=<span class="st0">"1.0"</span> <span class="re0">encoding</span>=<span class="st0">"utf-8"</span><span class="re2">?&gt;</span></span><br>
 <span class="sc3"><span class="re1">&lt;user<span class="re2">&gt;</span></span></span><br>
 <span class="sc3"><span class="re1">&lt;name<span class="re2">&gt;</span></span></span>张三 <span class="sc3"><span class="re1">&lt;/name<span class="re2">&gt;</span></span></span><br>
 <span class="sc3"><span class="re1">&lt;password<span class="re2">&gt;</span></span></span>123456<span class="sc3"><span class="re1">&lt;/password<span class="re2">&gt;</span></span></span><br>
@@ -496,7 +502,7 @@ node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><sp
 	<section id="json1" class="step slide rebuild">
 		<h2>JSON应用</h2>
 		<p>json作为一种数据交换格式，经常应用在数据传输、数据存储（mongoDB）等方面</p>
-		<div data-build><img src="img/udc16.png" alt="" />
+		<div data-build><center><img src="src/img/udc16.png" alt="" /></center>
 		</div>
 	</section>
 	
@@ -506,17 +512,30 @@ node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><sp
 		<div data-build>
 		<p><strong>应用</strong>：<a href="javascript:void((function(){var n=navigator.userAgent.toLowerCase();ie=n.indexOf('msie')!=-1?1:0;if(document.documentMode)ie=0;charset='';if(ie)charset=document.charset;src=ie&&charset=='utf-8'?'http://web.pinyin.sogou.com/web_ime/init2_utf8.php':'http://web.pinyin.sogou.com/web_ime/init2.php';element=document.createElement('script');element.setAttribute('src',src);document.body.appendChild(element);})())">云输入法</a></p>
 		<input type="text" id="area_con" style="overflow:auto;" value="体验下云输入法" onfocus="if(this.value=='体验下云输入法'){this.value=''}" onblur="if(this.value==''){this.value='体验下云输入法'}"/>
-		<img src="img/udc17.png" style="width:750px" />
+		<center><img src="src/img/udc17.png" style="width:750px" /></center>
 		</div>
 		
 	</section>
 	
-	<section id="other" class="step slide">
+	<section id="other" class="step slide rebuild">
 		<h1>其他</h1>
 		<ul>
 			<li>event事件处理</li>
 			<li>ajax请求</li>
-			<li>……</li>
+			<li>javascript框架</li>
+			<li style="list-style:none;">
+				<ul>
+					<li style="list-style:square inside">jQuery/YUI/prototype/STK...</li>
+				</ul>
+			</li>
+		</ul>
+		<p style="margin-top:20px">一个JavaScript框架或库实际上是一系列工具和函数，它能更容易产生跨浏览器兼容的JavaScript代码。</p>
+		<ul data-build>
+			<li>选择器</li>
+			<li>事件处理</li>
+			<li>DOM操作</li>
+			<li>实用函数</li>
+			<li>Ajax</li>
 		</ul>
 	</section>
 	<section id="html5" class="step slide rebuild">
@@ -533,7 +552,7 @@ node.<span class="me1">parentNode</span>.<span class="me1">removeChild</span><sp
 			<li>移动设备支持</li>
 			<li>增强可访问性</li>
 		</ul>
-		<img src="img/udc9.png" style="position:absolute;right:300px;top:300px;" />
+		<img src="src/img/udc9.png" style="position:absolute;right:300px;top:300px;" />
 	</section>
 	
 	<section id="map" class="step slide rebuild">
@@ -628,20 +647,48 @@ var map ;
 			<li>Google V8</li>
 			<li>事件驱动</li>
 		</ul>
-		<img src="img/udc8.png" alt="" />
+		<center><img src="src/img/udc8.png" alt="" /></center>
 		<footer>
 			<a href="http://js8.in/tag/nodejs">nodejs文章</a>
 		</footer>
 	</section>
 	
-	<section id="editor" class="step slide">
+	<section id="editor" class="step slide rebuild">
 		<h2>编辑器</h2>
 		<ul>
 			<li>IDE:Apanta、webStorm、eclipse</li>
 			<li>文本编辑器：NotePad++、记事本、Sublime Text2……</li>
 			<li>牛人利器：vim</li>
 		</ul>
-		<img src="img/vim.png" alt="" />
+		<script type="text/javascript">
+			var my_zen_settings = {
+				html: {
+					filters: 'bem,html'
+				}
+			};
+			var loadZenCoding = function(){
+				var script = document.createElement('script');
+				script.onload = function(){
+					document.getElementById('zencodingParent').addEventListener('keydown',function(e){
+						e.stopPropagation();
+					},false);
+					zen_textarea.setup({pretty_break: true, use_tab: true});
+					alert('加载zencoding成功，开始吧！');
+				}
+				script.src = 'src/js/zen_textarea.js';
+				document.body.appendChild(script);
+			}
+		</script>
+		<script type="text/javascript" src="http://zen-coding.ru/textarea/zen_textarea.min.js"></script>
+		<div data-build id="zencodingParent">
+			<h4>Zen Coding</h4>
+			<p style="font-size:20px;">zenCoding是一种快速写html/css的软件，只是语法缩写，提高前端工作者的代码书写效率<br/>
+			<button onclick="loadZenCoding()">加载ZenCoding</button>，加载之后输入zencoding语法，使用Tab做展开快捷键<br/>
+			例如：html:xt>div#id.cls>ul>li*5>a[title="title$"]+img[src='src/img/$.png']
+			</p>
+			
+			<center><textarea id="zencoding" class="zc-use_tab-true" style="width:700px;height:360px"></textarea></center>
+		</div>
 	</section>
 	
 	<section id="debug" class="step slide">
@@ -652,9 +699,9 @@ var map ;
 			<li>Chrome：开发者工具</li>
 		
 		</ul>
-		<img src="img/udc10.png" style="" />
-		<img src="img/udc11.png" style="position:absolute;bottom:50px;left:0" />
-		<img src="img/udc12.png" style="position:absolute;right:0;bottom:0" />
+		<img src="src/img/udc10.png" style="" />
+		<img src="src/img/udc11.png" style="position:absolute;bottom:50px;left:0" />
+		<img src="src/img/udc12.png" style="position:absolute;right:0;bottom:0" />
 	</section>
 	
 	<section id="jslint" class="step slide rebuild">
@@ -662,17 +709,18 @@ var map ;
 		<ul>
 			<li><strong>JSLint</strong> 是 Douglas Crockford 创建的js代码质量检测工具。虽然 JSLint 不能保证代码逻辑一定正确，但却有助于发现错误并教会开发人员一些好的编码实践。 </li>
 		</ul>
-		<center data-build><img src="img/udc13.png" style="height:400px" /></center>
+		<center data-build><img src="src/img/udc13.png" style="height:400px" /></center>
 		
 	</section>
 	
 	<section id="book" class="step slide rebuild">
 		<h1>学习书籍</h1>
 		<div data-build>
-		<img src="img/udc4.png" alt="" />
-		<img src="img/udc5.png" alt="" />
-		<img src="img/udc6.png" alt="" />
-		<img src="img/udc7.png" alt="" />
+		<img src="src/img/udc4.png" alt="" />
+		<img src="src/img/udc5.png" alt="" />
+		<br/>
+		<img src="src/img/udc6.png" alt="" />
+		<img src="src/img/udc7.png" alt="" />
 		</div>
 	</section>
 	
