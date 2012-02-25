@@ -19,6 +19,24 @@ webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是
 
 建议浏览器chrome 16+，全屏模式（F11），以达到最佳动画效果。在Firefox下会出现拖尾现象，个人认为是Firefox 8下对CSS3动画效果渲染太慢导致，其他浏览器未测试。
 
+## 使用示例
+>
+>wSlide({
+>	slideId:'slide',//演示文档id
+>	canvasId:'myCanvas',//画板id
+>	ctrlId:'slideCtrl'//控制部分id
+>});
+>
+
+#### 参数说明
+> * slideId: 演示文档内容部分ID，class为step为每页，slide为带边框的页面，**必填**
+> * canvasId: canvas元素画板部分ID，**选填**
+> * ctrlId: 控制部分ID，class为home代表返回首页，class为paint开启画板，class为clearIt清除画板，**选填**
+> * presentClass: 当前幻灯片class，**选填，默认为present**
+> * pastClass: 上一页幻灯片class，**选填，默认为past**
+> * futureClass: 下一页幻灯片class，**选填，默认为future**
+
+
 ## 快捷键
 
 * 空格/→/↓/Tab/pageDown：下一页
