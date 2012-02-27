@@ -1,5 +1,5 @@
 
-!function(doc,win){
+;!function(doc,win){
 	/**
 	 * 工具函数定义区
 	 * @param {Object} el
@@ -9,14 +9,14 @@
 	 	if(typeof id !== 'string' || id === ''){
 			return false;
 		}
-        return document.getElementById(id);
+        return doc.getElementById(id);
     },
 	$ = function ( selector, context ) {
-        context = context || document;
+        context = context || doc;
         return context.querySelector(selector);
     },
 	$$ = function ( selector, context ) {
-        context = context || document;
+        context = context || doc;
         return toArray( context.querySelectorAll(selector) );
     }, 
 	toArray = function(nodelist){
@@ -128,6 +128,10 @@
 		}
 		canvas.width = win.innerWidth;
 	    canvas.height = win.innerHeight;
+		canvas.context = canvas.getContext('2d');
+	    canvas.context.lineWidth = 5;
+	    canvas.context.lineCap = 'round';
+	    canvas.context.strokeStyle = "red";
 //	    css(canvas, {
 //		 	width:win.innerWidth,
 //		 	height: win.innerHeight
@@ -139,10 +143,7 @@
 			return;
 		}
 		canvasReady();
-		canvas.context = canvas.getContext('2d');
-	    canvas.context.lineWidth = 5;
-	    canvas.context.lineCap = 'round';
-	    canvas.context.strokeStyle = "red";
+		
 //		 css(canvas, {
 //		 	display: "",
 //		 	cursor: "crosshair"
@@ -176,18 +177,16 @@
 	 */
 		var pMouseDown = function(e){
 			canvas.isMouseDown = true;
-			event = e;
-			canvas.iLastX = event.clientX - canvas.offsetLeft + (win.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft);
-			canvas.iLastY = event.clientY - canvas.offsetTop + (win.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop);
+			canvas.iLastX = e.clientX - canvas.offsetLeft + (win.pageXOffset || doc.body.scrollLeft || doc.documentElement.scrollLeft);
+			canvas.iLastY = e.clientY - canvas.offsetTop + (win.pageYOffset || doc.body.scrollTop || doc.documentElement.scrollTop);
 		}, pMouseUp = function(){
 			canvas.isMouseDown = false;
 			canvas.iLastX = -1;
 			canvas.iLastY = -1;
 		}, pMouseMove = function(e){
 			if (canvas.isMouseDown) {
-				event = e;
-				var iX = event.clientX - canvas.offsetLeft + (win.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft);
-				var iY = event.clientY - canvas.offsetTop + (win.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop);
+				var iX = e.clientX - canvas.offsetLeft + (win.pageXOffset || doc.body.scrollLeft || doc.documentElement.scrollLeft);
+				var iY = e.clientY - canvas.offsetTop + (win.pageYOffset || doc.body.scrollTop || doc.documentElement.scrollTop);
 				canvas.context.beginPath();
 				canvas.context.moveTo(canvas.iLastX, canvas.iLastY);
 				canvas.context.lineTo(iX, iY);
