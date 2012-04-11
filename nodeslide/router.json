@@ -1,0 +1,16 @@
+{
+    
+	"/hi.ppt": {
+        "template": "hi.html",
+        "password": "test"
+    },
+	"/world.ppt": {
+        "template": "hi.html",
+        "password": "test"
+    },
+    "/udc.ppt": {
+        "template": "udc.html",
+        "password": "test"
+    }
+
+}
