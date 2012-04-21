@@ -1,5 +1,6 @@
 # webSlide — PPT演示文档javascript框架
-[webSlide](https://github.com/ksky521/webSlide)是用于在线PPT演示文档的javascript框架
+[webSlide](https://github.com/ksky521/webSlide)是用于在线PPT演示文档的javascript框架。
+另外提供[nodePPT](https://github.com/ksky521/nodePPT)使用nodejs写的，可以手机端控制pc端的演示文档框架。
 ## 鸣谢
 webSlide的想法来自于impress.js，但是本人在使用过程中发现impress.js经常卡，尤其是当演示文档页面和图片比较多之时，经常出现动画效果不流畅。
 
